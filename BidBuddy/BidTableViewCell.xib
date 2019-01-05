@@ -33,32 +33,32 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.boundsToMasks" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pmE-DT-tvs">
-                        <rect key="frame" x="108" y="19" width="293" height="71.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pmE-DT-tvs">
+                        <rect key="frame" x="108" y="19" width="293" height="66.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Desire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v32-GW-cfl">
-                                <rect key="frame" x="0.0" y="0.0" width="124" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Colour,2008 Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHL-Y4-hn5">
-                                <rect key="frame" x="0.0" y="26" width="172.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Colour,2008 Model, 10,000 Km on Road" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHL-Y4-hn5">
+                                <rect key="frame" x="0.0" y="27" width="268" height="16"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-oq-Zbd">
-                                <rect key="frame" x="0.0" y="51.5" width="293" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-oq-Zbd">
+                                <rect key="frame" x="0.0" y="46" width="293" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Bid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9i-R2-yeU">
-                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="5,00,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLM-c2-eXc">
-                                        <rect key="frame" x="161.5" y="0.0" width="131.5" height="20"/>
+                                        <rect key="frame" x="101.5" y="0.0" width="191.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,8 +71,8 @@
                         </constraints>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-cm-fm3">
-                        <rect key="frame" x="311" y="96" width="90" height="32"/>
-                        <color key="backgroundColor" red="0.59942874872855467" green="1" blue="0.46287618678911968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="311" y="91" width="90" height="37"/>
+                        <color key="backgroundColor" red="0.56208080225376411" green="1" blue="0.58670845002819483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="90" id="v67-DC-F7e"/>
                         </constraints>

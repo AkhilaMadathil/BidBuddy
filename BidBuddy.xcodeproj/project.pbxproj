@@ -23,7 +23,6 @@
 		A1B9662521E0A684003DD653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B9662321E0A684003DD653 /* LaunchScreen.storyboard */; };
 		A1B9663021E0A684003DD653 /* BidBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9662F21E0A684003DD653 /* BidBuddyTests.swift */; };
 		A1B9663B21E0A685003DD653 /* BidBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */; };
-		A1B9665521E0BBD6003DD653 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9665421E0BBD6003DD653 /* Request.swift */; };
 		A1B9665721E0C129003DD653 /* CarBid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B9665621E0C129003DD653 /* CarBid.storyboard */; };
 		A1B9665921E0C3BD003DD653 /* BidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9665821E0C3BD003DD653 /* BidDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		A1B9663621E0A685003DD653 /* BidBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidBuddyUITests.swift; sourceTree = "<group>"; };
 		A1B9663C21E0A685003DD653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1B9665421E0BBD6003DD653 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A1B9665621E0C129003DD653 /* CarBid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarBid.storyboard; sourceTree = "<group>"; };
 		A1B9665821E0C3BD003DD653 /* BidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -473,10 +471,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EQ48ZT94H8;
 				INFOPLIST_FILE = BidBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy.hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,10 +486,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EQ48ZT94H8;
 				INFOPLIST_FILE = BidBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy.hello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
