@@ -32,12 +32,9 @@ class BidDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
     func flashBG(){
         UIView.animate(withDuration: 0.7, animations: {
-            self.view.backgroundColor = UIColor.red
-
+            self.liveStatus.alpha = 0.0
         })
     }
-
 }

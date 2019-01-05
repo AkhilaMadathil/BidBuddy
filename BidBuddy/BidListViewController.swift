@@ -20,6 +20,7 @@ class BidListViewController: UIViewController {
         self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableViewCell")
         self.tableView.rowHeight = 120
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        self.tableView.tableFooterView = UIView()
         self.setupSearchBar()
     }
     
@@ -43,5 +44,8 @@ extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard.init(name: "CarBid", bundle: Bundle.main).instantiateViewController(withIdentifier: "BidDetailVC") as? BidDetailViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }

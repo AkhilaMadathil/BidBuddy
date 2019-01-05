@@ -13,7 +13,7 @@
         <!--Bid Detail View Controller-->
         <scene sceneID="mGN-vK-gLM">
             <objects>
-                <viewController id="CtH-tp-0sh" customClass="BidDetailViewController" customModule="BidBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="BidDetailVC" storyboardIdentifier="BidDetailVC" id="CtH-tp-0sh" customClass="BidDetailViewController" customModule="BidBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uL0-iQ-OuZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
