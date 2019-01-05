@@ -19,7 +19,19 @@ class BidTableViewCell: UITableViewCell {
         bidButton.layer.shadowOpacity = 1.0
         bidButton.layer.shadowRadius = 0.0
         bidButton.layer.masksToBounds = false
-        bidButton.layer.cornerRadius = 4.0
+        bidButton.layer.cornerRadius = 6.0
+        bidButton.addTarget(self, action: #selector(self.holdDown(sender:)), for: .touchDown)
+        bidButton.addTarget(self, action: #selector(holdRelease(sender:)), for: .touchUpInside)
+    }
+    
+    @objc func holdDown(sender:UIButton)
+    {
+        bidButton.alpha = 0.5
+    }
+    
+    @objc func holdRelease(sender:UIButton)
+    {
+        bidButton.alpha = 1.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
