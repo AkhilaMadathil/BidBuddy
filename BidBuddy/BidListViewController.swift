@@ -16,10 +16,18 @@ class BidListViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view
-        self.tableView.register(UINib(nibName: "BidTableViewCell", bundle: nil), forCellReuseIdentifier: "BidTableView")
-        self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableView")
-        self.tableView.rowHeight = 44
+        self.tableView.register(UINib(nibName: "BidTableViewCell", bundle: nil), forCellReuseIdentifier: "BidTable")
+        self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableViewCell")
+        self.tableView.rowHeight = 120
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        self.setupSearchBar()
+    }
+    
+    private func setupSearchBar() {
+        navigationItem.title = "Live Bid"
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.searchController = searchController
     }
 
 }
@@ -27,11 +35,11 @@ class BidListViewController: UIViewController {
 extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BidTableView", for: indexPath) as? BidTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BidTable", for: indexPath) as? BidTableViewCell
         return cell!
     }
     

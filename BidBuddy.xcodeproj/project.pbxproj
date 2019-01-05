@@ -125,7 +125,6 @@
 				A0387C4521E0B03300ED37DE /* RestConnector+EndPoints.swift */,
 				A1B9665821E0C3BD003DD653 /* BidDetailViewController.swift */,
 				A0387C4721E0B03400ED37DE /* RestInterface.swift */,
-				A1B9665421E0BBD6003DD653 /* Request.swift */,
 				A0387C4621E0B03400ED37DE /* ServiceConstant.swift */,
 				A0387C4921E0B03400ED37DE /* ServiceModel.swift */,
 				A1B9665621E0C129003DD653 /* CarBid.storyboard */,
@@ -307,7 +306,6 @@
 				A0387C5021E0B56600ED37DE /* BidListViewController.swift in Sources */,
 				A0387C5321E0B66500ED37DE /* BidTableViewCell.swift in Sources */,
 				A0387C4C21E0B03400ED37DE /* RestInterface.swift in Sources */,
-				A1B9665521E0BBD6003DD653 /* Request.swift in Sources */,
 				A0387C4E21E0B03400ED37DE /* ServiceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J47U6Q9N4M;
+				DEVELOPMENT_TEAM = EQ48ZT94H8;
 				INFOPLIST_FILE = BidBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy;
@@ -490,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J47U6Q9N4M;
+				DEVELOPMENT_TEAM = EQ48ZT94H8;
 				INFOPLIST_FILE = BidBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Akhila.BidBuddy;
