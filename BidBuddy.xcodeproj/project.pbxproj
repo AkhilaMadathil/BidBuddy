@@ -20,6 +20,7 @@
 		A1B9662521E0A684003DD653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B9662321E0A684003DD653 /* LaunchScreen.storyboard */; };
 		A1B9663021E0A684003DD653 /* BidBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9662F21E0A684003DD653 /* BidBuddyTests.swift */; };
 		A1B9663B21E0A685003DD653 /* BidBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */; };
+		A1B9665521E0BBD6003DD653 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9665421E0BBD6003DD653 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A1B9663621E0A685003DD653 /* BidBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidBuddyUITests.swift; sourceTree = "<group>"; };
 		A1B9663C21E0A685003DD653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B9665421E0BBD6003DD653 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				A0387C4821E0B03400ED37DE /* RestConnector.swift */,
 				A0387C4521E0B03300ED37DE /* RestConnector+EndPoints.swift */,
 				A0387C4721E0B03400ED37DE /* RestInterface.swift */,
+				A1B9665421E0BBD6003DD653 /* Request.swift */,
 				A0387C4621E0B03400ED37DE /* ServiceConstant.swift */,
 				A0387C4921E0B03400ED37DE /* ServiceModel.swift */,
 				A1B9661721E0A684003DD653 /* AppDelegate.swift */,
@@ -284,6 +287,7 @@
 				A1B9662021E0A684003DD653 /* BidBuddy.xcdatamodeld in Sources */,
 				A1B9661821E0A684003DD653 /* AppDelegate.swift in Sources */,
 				A0387C4C21E0B03400ED37DE /* RestInterface.swift in Sources */,
+				A1B9665521E0BBD6003DD653 /* Request.swift in Sources */,
 				A0387C4E21E0B03400ED37DE /* ServiceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
