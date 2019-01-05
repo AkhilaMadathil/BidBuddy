@@ -15,6 +15,7 @@
 		A1B9662521E0A684003DD653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B9662321E0A684003DD653 /* LaunchScreen.storyboard */; };
 		A1B9663021E0A684003DD653 /* BidBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9662F21E0A684003DD653 /* BidBuddyTests.swift */; };
 		A1B9663B21E0A685003DD653 /* BidBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */; };
+		A1B9664921E0A75D003DD653 /* Network in Resources */ = {isa = PBXBuildFile; fileRef = A1B9664821E0A75D003DD653 /* Network */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A1B9663621E0A685003DD653 /* BidBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BidBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B9663A21E0A685003DD653 /* BidBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidBuddyUITests.swift; sourceTree = "<group>"; };
 		A1B9663C21E0A685003DD653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B9664821E0A75D003DD653 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A1B9661721E0A684003DD653 /* AppDelegate.swift */,
 				A1B9661921E0A684003DD653 /* ViewController.swift */,
 				A1B9661B21E0A684003DD653 /* Main.storyboard */,
+				A1B9664821E0A75D003DD653 /* Network */,
 				A1B9662121E0A684003DD653 /* Assets.xcassets */,
 				A1B9662321E0A684003DD653 /* LaunchScreen.storyboard */,
 				A1B9662621E0A684003DD653 /* Info.plist */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B9662521E0A684003DD653 /* LaunchScreen.storyboard in Resources */,
+				A1B9664921E0A75D003DD653 /* Network in Resources */,
 				A1B9662221E0A684003DD653 /* Assets.xcassets in Resources */,
 				A1B9661D21E0A684003DD653 /* Main.storyboard in Resources */,
 			);
