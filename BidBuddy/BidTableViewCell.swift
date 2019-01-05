@@ -11,6 +11,12 @@ import UIKit
 class BidTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bidButton: UIButton!
+    @IBOutlet weak var carimage: UIImageView!
+    @IBOutlet weak var carName: UILabel!
+    
+    //dummy data
+    var carNames = ["Swift Desire", "Baleno", "Eco sport", "Indica","Swift Desire", "Baleno", "Eco sport", "Indica"]
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -40,4 +46,10 @@ class BidTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(indexPath: IndexPath) {
+        imageView?.contentMode = .scaleAspectFit
+        imageView?.clipsToBounds = true
+        carName.text = carNames[indexPath.row]
+    }
 }
+

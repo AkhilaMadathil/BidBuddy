@@ -10,7 +10,9 @@ import UIKit
 
 class BidListViewController: UIViewController {
 
+    //MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,7 @@ extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BidTable", for: indexPath) as? BidTableViewCell
         cell?.selectionStyle = .none
+        cell?.configure(indexPath: indexPath)
         return cell!
     }
     
