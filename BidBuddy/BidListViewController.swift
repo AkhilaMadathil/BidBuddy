@@ -30,6 +30,9 @@ class BidListViewController: UIViewController {
         navigationItem.searchController = searchController
     }
 
+    @IBAction func didTapOnBid(_ sender: Any) {
+        print("Tapped")
+    }
 }
 
 extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,8 +47,11 @@ extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard.init(name: "CarBid", bundle: Bundle.main).instantiateViewController(withIdentifier: "BidDetailVC") as? BidDetailViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "HatchBack"
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 70
     }
 }
