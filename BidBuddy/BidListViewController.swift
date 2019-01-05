@@ -19,6 +19,7 @@ class BidListViewController: UIViewController {
         self.tableView.register(UINib(nibName: "BidTableViewCell", bundle: nil), forCellReuseIdentifier: "BidTable")
         self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableViewCell")
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        self.tableView.tableFooterView = UIView()
         self.setupSearchBar()
     }
     

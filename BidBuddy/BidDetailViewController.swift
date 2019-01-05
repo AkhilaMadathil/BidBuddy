@@ -10,11 +10,15 @@ import UIKit
 
 class BidDetailViewController: UIViewController {
 
-    
+    //MARK: IBOutlets
+    @IBOutlet weak var bidTextField: UITextField!
     @IBOutlet weak var liveStatus: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         flashBG()
+        bidTextField.layer.cornerRadius = 6.0
+        liveStatus.layer.cornerRadius = 6.0
         // Do any additional setup after loading the view.
     }
 
@@ -32,12 +36,14 @@ class BidDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
     func flashBG(){
-        UIView.animate(withDuration: 0.7, animations: {
-            self.view.backgroundColor = UIColor.red
-
+        UIView.animate(withDuration: (1.0), delay: 0.0, options: .allowAnimatedContent, animations: {
+            self.liveStatus.alpha = 0
+        }, completion: { finished in
+            UIView.animate(withDuration: (1.0), animations: {
+                self.liveStatus.alpha = 1
+                self.flashBG()
+            })
         })
     }
-
 }
