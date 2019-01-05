@@ -13,10 +13,15 @@ class BidDetailViewController: UIViewController {
     //MARK: IBOutlets
     @IBOutlet weak var bidTextField: UITextField!
     @IBOutlet weak var liveStatus: UIView!
-    
+    @IBOutlet weak var countDown: UILabel!
+    var countdownTimer: Timer!
+    var totalTime = 60
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = false
         flashBG()
+        startTimer()
         bidTextField.layer.cornerRadius = 6.0
         liveStatus.layer.cornerRadius = 6.0
         // Do any additional setup after loading the view.
@@ -45,5 +50,30 @@ class BidDetailViewController: UIViewController {
                 self.flashBG()
             })
         })
+    }
+    
+    func startTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTime() {
+        countDown.text = timeFormatted(totalTime)
+      // print("timerLabel.text ----- \(timeFormatted(totalTime))")
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+        }
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let hours: Int = totalSeconds / 3600
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
     }
 }
