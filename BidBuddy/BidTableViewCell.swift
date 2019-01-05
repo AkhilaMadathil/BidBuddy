@@ -19,7 +19,7 @@ class BidTableViewCell: UITableViewCell {
         bidButton.layer.shadowOpacity = 1.0
         bidButton.layer.shadowRadius = 0.0
         bidButton.layer.masksToBounds = false
-        bidButton.layer.cornerRadius = 6.0
+        bidButton.layer.cornerRadius = 5.0
         bidButton.addTarget(self, action: #selector(self.holdDown(sender:)), for: .touchDown)
         bidButton.addTarget(self, action: #selector(holdRelease(sender:)), for: .touchUpInside)
     }
