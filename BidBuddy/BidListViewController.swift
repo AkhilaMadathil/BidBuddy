@@ -18,7 +18,6 @@ class BidListViewController: UIViewController {
         // Do any additional setup after loading the view
         self.tableView.register(UINib(nibName: "BidTableViewCell", bundle: nil), forCellReuseIdentifier: "BidTable")
         self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableViewCell")
-        self.tableView.rowHeight = 120
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
         self.setupSearchBar()
     }
@@ -40,6 +39,7 @@ extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BidTable", for: indexPath) as? BidTableViewCell
+        cell?.selectionStyle = .none
         return cell!
     }
     
