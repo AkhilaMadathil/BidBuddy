@@ -12,6 +12,9 @@
 		A0387C4C21E0B03400ED37DE /* RestInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0387C4721E0B03400ED37DE /* RestInterface.swift */; };
 		A0387C4D21E0B03400ED37DE /* RestConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0387C4821E0B03400ED37DE /* RestConnector.swift */; };
 		A0387C4E21E0B03400ED37DE /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0387C4921E0B03400ED37DE /* ServiceModel.swift */; };
+		A0387C5021E0B56600ED37DE /* BidListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0387C4F21E0B56600ED37DE /* BidListViewController.swift */; };
+		A0387C5321E0B66500ED37DE /* BidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0387C5121E0B66500ED37DE /* BidTableViewCell.swift */; };
+		A0387C5421E0B66500ED37DE /* BidTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0387C5221E0B66500ED37DE /* BidTableViewCell.xib */; };
 		A1B9661821E0A684003DD653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9661721E0A684003DD653 /* AppDelegate.swift */; };
 		A1B9661A21E0A684003DD653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9661921E0A684003DD653 /* ViewController.swift */; };
 		A1B9661D21E0A684003DD653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B9661B21E0A684003DD653 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 		A0387C4721E0B03400ED37DE /* RestInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterface.swift; sourceTree = "<group>"; };
 		A0387C4821E0B03400ED37DE /* RestConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestConnector.swift; sourceTree = "<group>"; };
 		A0387C4921E0B03400ED37DE /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		A0387C4F21E0B56600ED37DE /* BidListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidListViewController.swift; sourceTree = "<group>"; };
+		A0387C5121E0B66500ED37DE /* BidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidTableViewCell.swift; sourceTree = "<group>"; };
+		A0387C5221E0B66500ED37DE /* BidTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BidTableViewCell.xib; sourceTree = "<group>"; };
 		A1B9661421E0A684003DD653 /* BidBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B9661721E0A684003DD653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B9661921E0A684003DD653 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +125,10 @@
 				A0387C4921E0B03400ED37DE /* ServiceModel.swift */,
 				A1B9661721E0A684003DD653 /* AppDelegate.swift */,
 				A1B9661921E0A684003DD653 /* ViewController.swift */,
+				A0387C4F21E0B56600ED37DE /* BidListViewController.swift */,
 				A1B9661B21E0A684003DD653 /* Main.storyboard */,
+				A0387C5121E0B66500ED37DE /* BidTableViewCell.swift */,
+				A0387C5221E0B66500ED37DE /* BidTableViewCell.xib */,
 				A1B9662121E0A684003DD653 /* Assets.xcassets */,
 				A1B9662321E0A684003DD653 /* LaunchScreen.storyboard */,
 				A1B9662621E0A684003DD653 /* Info.plist */,
@@ -256,6 +265,7 @@
 				A1B9662521E0A684003DD653 /* LaunchScreen.storyboard in Resources */,
 				A1B9662221E0A684003DD653 /* Assets.xcassets in Resources */,
 				A1B9661D21E0A684003DD653 /* Main.storyboard in Resources */,
+				A0387C5421E0B66500ED37DE /* BidTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +296,8 @@
 				A1B9661A21E0A684003DD653 /* ViewController.swift in Sources */,
 				A1B9662021E0A684003DD653 /* BidBuddy.xcdatamodeld in Sources */,
 				A1B9661821E0A684003DD653 /* AppDelegate.swift in Sources */,
+				A0387C5021E0B56600ED37DE /* BidListViewController.swift in Sources */,
+				A0387C5321E0B66500ED37DE /* BidTableViewCell.swift in Sources */,
 				A0387C4C21E0B03400ED37DE /* RestInterface.swift in Sources */,
 				A1B9665521E0BBD6003DD653 /* Request.swift in Sources */,
 				A0387C4E21E0B03400ED37DE /* ServiceModel.swift in Sources */,
