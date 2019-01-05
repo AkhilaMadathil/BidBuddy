@@ -38,7 +38,7 @@ class BidListViewController: UIViewController {
 extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,5 +53,10 @@ extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard.init(name: "CarBid", bundle: Bundle.main).instantiateViewController(withIdentifier: "BidDetailVC") as? BidDetailViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
