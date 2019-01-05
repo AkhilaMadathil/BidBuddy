@@ -28,7 +28,7 @@ class RestConnector: NSObject {
 extension RestConnector {
     func createRequest(_ urlString:String, method: RequstMethod = .GET,
                        params:[String: Any]? = nil, headers:[String: String]? = nil,
-                       encoding:RequestEncoding = .jsonEncode) throws -> URLRequest {
+                       encoding:RequestEncoding = .jsonEncode) -> URLRequest {
         
         let stringUrl                       = Service.getServiceURL(key: urlString)
         let url                             = URL(string: stringUrl)

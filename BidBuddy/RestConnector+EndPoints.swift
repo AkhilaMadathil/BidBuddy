@@ -13,27 +13,30 @@ enum Endpoints {
     case fetchRequests
     case fetchAudit
     case fetchProducts
+}
+
+struct RequestEndpoints {
     
-    func createRequest() -> URLRequest {
+    static func createRequest(_ type: Endpoints) -> URLRequest {
         
-        switch self {
+        switch type {
         case .authenticate:
             // Perform Authentication
             print("implement Auth")
             let url = "facebook.com/"
-            return try RestConnector.shared.createRequest(url, method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
+            return RestConnector.shared.createRequest(url, method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
         case .fetchRequests:
             print("implement fetchRequests")
-            return try RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
+            return RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
             
         case .fetchAudit:
             print("implement audit")
-            return try RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
+            return RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
             
         case .fetchProducts:
             print("implement audit")
-            return try RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
+            return RestConnector.shared.createRequest("url", method: .GET, params: nil, headers: nil, encoding: .jsonEncode)
         }
     }
-
+    
 }
