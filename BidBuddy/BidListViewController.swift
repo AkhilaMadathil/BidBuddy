@@ -14,9 +14,12 @@ class BidListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    
+        
+        // Do any additional setup after loading the view
+        self.tableView.register(UINib(nibName: "BidTableViewCell", bundle: nil), forCellReuseIdentifier: "BidTableView")
+        self.tableView.register(BidTableViewCell.self, forCellReuseIdentifier: "BidTableView")
+        self.tableView.rowHeight = 44
+        self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
     }
 
 }
@@ -24,11 +27,12 @@ class BidListViewController: UIViewController {
 extension BidListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BidTableView", for: indexPath) as? BidTableViewCell
+        return cell!
     }
     
     
